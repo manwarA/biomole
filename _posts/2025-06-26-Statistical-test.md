@@ -5,8 +5,8 @@ date: 2025-06-23
 There are hundereds of statistical tests that have been proposed over the years for various situations. However, it is not feasible to master all these tests even for statitiion, let alone a biologist should learn these. Here, lets dive into the most prominent tests that are frequently used by biologists and should be learnt for effective research. 
 
 <Comparing group differences>
-t-test
-Mann-Whitney U test
+t-test\n
+Mann-Whitney U test\n
 ANOVA (Analysis of variance)
 Kruskal-Wallis test
 
