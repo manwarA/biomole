@@ -7,9 +7,26 @@ There are hundereds of statistical tests that have been proposed over the years 
 
 ### **Comparing group differences**
 1. t-test
-2. Mann-Whitney U test
-3. ANOVA (Analysis of variance)
-4. Kruskal-Wallis test
+  The most basic stattistical test used to compare the means of two samples or one sample (one value to a sample). It assumes normality meaning that the data should be normaly distributed and their variances should be equal. Normal distribution is difficult to achieve in real-world situations, therefore, an alternative    to standard t-test, **Welch's t-test** sould be used (aka unequal variances t-test). Welch's t-test does not assume normality of data, and can work with unequal number of data points in each sample. In **R**, the default t-test performs Welch's t-test, however, in **python** (scipy), one needs to specify equal_var=False
+```{r}
+t_test <- t.test(a, b,
+                 alternative = c("two.sided"),
+                 paired = False, # whether the study subjects are same before and after teh exp.
+                 var.equal = F)
+```
+
+
+```{python}
+from scipy.stats import ttest_ind
+t_test = ttest_ind(a, b,
+                   equal_var=False,
+                   axis=0) # Welch's t-test 
+```
+
+
+3. Mann-Whitney U test
+4. ANOVA (Analysis of variance)
+5. Kruskal-Wallis test
 
 ### **Relationship between variables**
 1. Correlation
