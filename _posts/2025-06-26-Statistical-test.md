@@ -30,10 +30,17 @@ t_test = ttest_ind(a, b,
 
 ### **Relationship between variables**
 1. Correlation
-  a. Pearson
-  b. Spearman
-2. Linear regression
-3. Logistic regression
+   The correlation analysis reveals how the two variables behave/change with respect to each other, for instance, if one variable is increasing and other is also increasing in magnitude, they are positively correlated with each other. The correlation can be positive, both are going in the same direction, negative, both varibales are in opposite direction, and no-correlation, increase/decrease in one variable does not influence other variable. The correlation can be measured by either one of two methods:
+  a. Pearson: this is default method in R, quite reasonale for linear relationships. In case of non-linear relationships, the correlation strength can degrade.
+  b. Spearman: Another way to measure the correlation, however, it can be better in case of non-linear relationships.
+
+Correlation can be measured by "cor" command in base-R, where the default method can be substituited by "method" argument. 
+```{r}
+cor(vector_1, vector_2, method = "pearson")
+```
+
+3. Linear regression
+4. Logistic regression
 
 ### **Categorical data**
 1. Chi-square test
