@@ -31,8 +31,18 @@ t_test = ttest_ind(a, b,
   Wilcoxon signedrank test is also non-parmateric that is useful for the ordinal or ranked data sets. It also avoids the normality assumption (imposed by dependant samples t-test).
 #### 5. ANOVA (Analysis of variance)
   ANOVA is used to compare the mean of three or more groups to evalute whether they are similar or not. The variation between the means of groups vs the variation within group is the working principal of this test. 
+  ```{r}
+      anova(weight ~ group, data = data)
+      or 
+      anova(object)
+  ```
+where object is the output of model fitting functions such as lm or glm. 
 #### 6. Kruskal-Wallis test
-  Non-paramtertic test to evalute the statistical significance among the medians of three or more groups using ranks. This is an alternative to one-way ANOVA.  
+  Non-paramtertic test to evalute the statistical significance among the medians of three or more groups using ranks. This is an alternative to one-way ANOVA.
+  ```{r}
+      kruskal.test(weight ~ group, data = data)
+  ```
+The group variable contains the different groups such as control, treated1, treated2 etc. 
 
 ### **Relationship between variables**
 #### 1. Correlation
