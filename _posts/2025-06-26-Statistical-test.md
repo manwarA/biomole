@@ -56,6 +56,7 @@ cor(vector_1, vector_2, method = "pearson")
 ```
 
 #### 3. Linear regression
+  A statistical method that used to estimate the linear relationship between a dependent variable and one or more independent variables. 
 #### 4. Logistic regression
 
 ### **Categorical data**
