@@ -56,7 +56,14 @@ cor(vector_1, vector_2, method = "pearson")
 ```
 
 #### 3. Linear regression
-  A statistical method that used to estimate the linear relationship between a dependent variable and one or more independent variables. This method estimate the relationship by fitting a straight line (best fit) to the independent variables. It can be used to predict the value of unknown dependent variable as well as used to interpret the data. In order to perform the linear regression, there are 4 assumptions that have to be met, otherwise, the results can be spurious. 
+  A statistical method that used to estimate the linear relationship between a dependent variable and one or more independent variables. This method estimate the relationship by fitting a straight line (best fit) to the independent variables. It can be used to predict the value of unknown dependent variable as well as used to interpret the data. In order to perform the linear regression, there are 4 main assumptions that have to be met, otherwise, the results can be spurious.
+  (1) IID: Independently acquired idneticficaaly distributed independent values. 
+  (2) Normlaity of residuals: The residuals (the difference between the observed and predicted values) are normaly distributed.
+  (3) Homoscadascity: The variance of error terms (residuals) should be consistent across all levels of the independent variables.
+  (4) Multicolinearity: There should be little or no colinearity in the data. Lack of correlation among the independent variables that can affect the outcome.
+  Apart from these, other assumptions such as absence of endogeneity, no outlier etc should also be obbserved. 
+  There are various method that can test spurious data such as QQ plot (for normality assumption), VIF (variance inflation factor) to determine the outlier etc. 
+  
 #### 4. Logistic regression
 
 ### **Categorical data**
