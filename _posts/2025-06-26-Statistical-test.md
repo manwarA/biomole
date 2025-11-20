@@ -56,7 +56,7 @@ cor(vector_1, vector_2, method = "pearson")
 ```
 
 #### 3. Linear regression
-  A statistical method that used to estimate the linear relationship between a dependent variable and one or more independent variables. 
+  A statistical method that used to estimate the linear relationship between a dependent variable and one or more independent variables. This method estimate the relationship by fitting a straight line (best fit) to the independent variables. It can be used to predict the value of unknown dependent variable as well as used to interpret the data. In order to perform the linear regression, there are 4 assumptions that have to be met, otherwise, the results can be spurious. 
 #### 4. Logistic regression
 
 ### **Categorical data**
