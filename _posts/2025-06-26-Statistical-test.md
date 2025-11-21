@@ -62,7 +62,7 @@ cor(vector_1, vector_2, method = "pearson")
   (3) Homoscadascity: The variance of error terms (residuals) should be consistent across all levels of the independent variables.
   (4) Multicolinearity: There should be little or no colinearity in the data. Lack of correlation among the independent variables that can affect the outcome.
   Apart from these, other assumptions such as absence of endogeneity, no outlier etc should also be obbserved. 
-  There are various method that can test spurious data such as QQ plot (for normality assumption), VIF (variance inflation factor) to determine the outlier etc. 
+  There are various method that can test spurious data such as QQ plot (for normality assumption), VIF (variance inflation factor) to determine the multicolinearity etc. 
   
 #### 4. Logistic regression
 
@@ -76,6 +76,8 @@ cor(vector_1, vector_2, method = "pearson")
 
 ### **Essential concepts**
 #### 1. p-values vs confidence interval
+   p-value refers to the certainity with that you can reject the null hypothesis. The threshold value can range from 0.1 to 0.001 depending on the objective of the experiment. Usually, 0.05 (or with 5% uncertainity) is used, however, you can tweak this to lower or higher values. A literature search of the relevant domain will provide the usuall threshold.  
+   On the other hand, the confidence interval refers to the range where the true-value lies. In other words, a 95% confidence interval of 2.5 to 3.4 means that I am 95% confidence/sure that the true value (mostly p-value or any other statistical measure) lies between 2.5 to 3.4 units. 
 #### 2. Effect size
 #### 3. Power analysis
 #### 4. Outliers and transformation
